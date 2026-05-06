@@ -32,7 +32,7 @@ public class Post extends PanacheMongoEntity {
       if (this.content == null) {
           return "";          // or return null; depending on what your frontend expects
       }                                                                                                                                                                                                                              
-      return new StringBuilder(this.content).reverse.toString();
+      return new StringBuilder(this.content).reverse().toString();
     }    
     
     public Long getTimestamp() {
