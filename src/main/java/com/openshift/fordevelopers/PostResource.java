@@ -36,6 +36,17 @@ public class PostResource {
 
   @DELETE
   public Response delete(Post post) {
+    //return Response.ok().build();
+    Post.delete("timestamp", post.getTimestamp());
     return Response.ok().build();
   }
+
+  public String getTitle() { 
+    return title; 
+  }
+
+  public String getContent() { 
+    return content; 
+  }
+
 }
