@@ -39,13 +39,4 @@ public class PostResource {
     lastPosts.remove(post);
     return Response.ok().build();
   }
-
-  public String getTitle() { 
-    return title; 
-  }
-
-  public String getContent() { 
-    return content; 
-  }
-
 }
